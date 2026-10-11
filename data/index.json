@@ -1,0 +1,82 @@
+{
+  "defaultBank": "latest2026",
+  "banks": [
+    {
+      "id": "latest2026",
+      "title": "IT2026 初賽｜網路與 Python",
+      "short": "2026 初賽",
+      "count": 22,
+      "file": "latest2026.json"
+    },
+    {
+      "id": "all",
+      "title": "IT 比賽完整題庫",
+      "short": "完整題庫",
+      "count": 424,
+      "file": "all.json"
+    },
+    {
+      "id": "it2025",
+      "title": "IT2025 初賽",
+      "short": "2025 初賽",
+      "count": 78,
+      "file": "it2025.json"
+    },
+    {
+      "id": "it2024",
+      "title": "IT2024 初賽",
+      "short": "2024 初賽",
+      "count": 73,
+      "file": "it2024.json"
+    },
+    {
+      "id": "it2023",
+      "title": "IT2023 初賽",
+      "short": "2023 初賽",
+      "count": 71,
+      "file": "it2023.json"
+    },
+    {
+      "id": "selection46",
+      "title": "IT 甄選題庫",
+      "short": "甄選題庫",
+      "count": 46,
+      "file": "selection46.json"
+    },
+    {
+      "id": "english",
+      "title": "IT 英文全稱",
+      "short": "英文全稱",
+      "count": 14,
+      "file": "english.json"
+    },
+    {
+      "id": "practice48",
+      "title": "IT 綜合練習｜48 題",
+      "short": "綜合練習",
+      "count": 48,
+      "file": "practice48.json"
+    },
+    {
+      "id": "office1",
+      "title": "Office 練習 1｜27 題",
+      "short": "Office 練習 1",
+      "count": 27,
+      "file": "office1.json"
+    },
+    {
+      "id": "office2",
+      "title": "Office 練習 2｜15 題",
+      "short": "Office 練習 2",
+      "count": 15,
+      "file": "office2.json"
+    },
+    {
+      "id": "office3",
+      "title": "Office 練習 3｜30 題",
+      "short": "Office 練習 3",
+      "count": 30,
+      "file": "office3.json"
+    }
+  ]
+}

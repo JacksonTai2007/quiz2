@@ -1,0 +1,106 @@
+﻿已讀取10份表單；共424道知識題（含重複題），另有1個提交提示。
+未取得官方評分答案。答案為逐題推導，或題幹中已公開的提示；歧義／錯誤題保留正解說明。2025第74題原圖未取得，僅提供條件答案。A/B/C…依本次抓取的選項位置，不是選項文字內可能誤寫的字母。
+
+IT 比賽｜考前速記
+先看 2026，再看高頻重複題。字母只按此處原始選項順序 A/B/C…；遇到順序打亂，以答案文字為準。
+答案為推導答案；IT_1.30 有 8 題題幹直接寫答案提示，另行標示。沒有讀到官方評分答案，也沒有提交表單。
+
+【1｜2026 最新 22 題】
+1–11：B B B B A A B D B B B
+12–22：B D B A B C B B B B C
+對照：1 ICMP；2 字典攻擊；3 錯誤是 tuple 可變；4 HTTP；5 域名可對多 IP；6 NFC；7 IPv6 標頭簡化；8 128bits；9 32bits；10 48bits；11 NAT。
+12 2026；13 tuple；14 [0, 4, 8]；15 10；16 ==比值/is比同一物件；17 18；18 3；19 ['a', 'b']；20 1 A 2 B；21 nohtyP；22 CPTTM。
+Python：list/dict/set 可變，tuple/str 不可變；set 去重；range(5) 只到4；切片左包右不包。
+[-4:]末四字，[::-1]反轉；函式內赋值預設局部；get(不存在的鍵,18)→18。
+預設 lst=[] 只建立一次，呼叫間會累積；or 回傳第一個真值物件，不一定是 bool。
+
+【2｜網路：先背 32／128／48】
+IPv4 32bits、IPv6 128bits、乙太網 MAC 48bits。
+IPv6：::1 回送、:: 未指定、::/0 預設路由；基本標頭固定40bytes。
+DNS 域名→IP；DHCP 自動配發網路設定；ARP IPv4→MAC；NAT 私網↔公網位址轉換。
+Ping→ICMP；即時音視頻常用 UDP；郵件協議通常 TCP；UDP 不保證重傳/順序。
+私有IP：10.*、172.16～172.31.*、192.168.*。80台主機最小常用 /25＝255.255.255.128，可用126台。
+傳統 C類第一段192～223；D類224～239（多播）。MAC只可有0～9、A～F，G不合法。
+Wi-Fi6＝802.11ax；題內列出的舊加密選項選 WPA2+AES，不要當成現今最強。
+傳統 Ethernet 教材：邏輯Bus、雙絞線實體Star；資料連結層第2層（標準亦涵蓋第1層）。
+
+端口速記：
+HTTP 80｜HTTPS 443｜DNS 53（UDP/TCP）｜DHCP server 67 / client 68（UDP）
+POP3 110（TCP）｜IMAP 143（TCP）｜NTP 123（UDP）｜SNMP 161（UDP；trap 162）
+TFTP 69（UDP）｜RDP 3389（TCP/UDP）｜OpenVPN 常用1194（UDP，可配置）
+
+【3｜Office：快捷鍵與參照】
+PPT：F5從頭放映；Shift+F5當前頁；E清除放映筆跡；Ctrl+M新投影片；Ctrl+D複製物件。
+PPT：選取窗格隱藏物件；自訂放映抽選精華投影片；改起始編號在設計/投影片大小/自訂；顯示編號在插入。
+Word：Ctrl+P列印；Ctrl+Enter分頁；Ctrl+E置中；Ctrl+Y重做；合併列印在「郵件」。
+Word：目前頁面＝游標所在頁；逐份列印＝1…5後再1…5；表格求上方數字＝SUM(ABOVE)。
+防他人閱讀＝檔案/資訊/保護文件/以密碼加密；不是只限制編輯。
+Excel：Ctrl+N新活頁簿；Ctrl+Enter讓整個選取範圍填同值；Alt+=自動加總；Ctrl+`顯示公式。
+分頁預覽看分頁；整頁模式/頁面配置看頁首頁尾；只要結果→貼上值；橫直互換→轉置。
+文字數字前導字元＝單引號 '；等差固定加、等比固定乘；AND全真才真，TRUE AND FALSE＝FALSE。
+SUM(B4:B8)；工作表!格位；跨活頁簿 =[KAY.XLS]SHEET1!$A$1；$固定欄或列。
+公式「隱藏」還要啟用工作表保護；篩選不會改写原儲存格。INDEX是查閱函數，不是邏輯函數。
+
+【4｜HTML / CSS / 編碼】
+<title>瀏覽器標題；<head>元資料；<body>頁面主體；<h1>最高標題；<br>換行。
+<img alt="…">替代文字；<input type="radio">圓形單選；type="checkbox"方形複選。
+CSS：.class、#id、*萬用；color文字色；font-size文字大小；text-decoration:none去底線；/*註解*/。
+h1 div 選 h1 裡的 div；p{color:red} 選全部 p；target="_blank"通常開新分頁。
+JS宣告用 let/const/var，=是賦值。GET資料在URL query；POST通常在body，POST本身不加密，保護敏感資料仍需HTTPS。
+黑RGB(0,0,0)、白(255,255,255)；舊簡體GB2312、舊繁體Big5；現代通常UTF-8。
+
+【5｜硬體／格式／數制】
+MBR在磁盤第一磁區＝LBA 0；舊BIOS常用Active分區，UEFI用EFI系統分區。
+Windows：NTFS；Apple：APFS/HFS+；Linux：ext；跨Win/Mac外接盤常選exFAT/FAT32。
+HDD磁軌同心圓；Cache提升突發效能；SSD無机械部分，別套用HDD傳統碎片整理。
+DDR4標準1.2V；DDR3常1.5V；DDR5常1.1V。DDR速度應分清MT/s與實際MHz。
+eSATA e＝external；SATA＝Serial Advanced Technology Attachment。
+PSU：OVP過壓、OCP過流、SCP短路、OPP過功率、OTP過溫、UVP欠壓。
+100MB÷5Mbit/s＝100×8÷5＝160秒（忽略開銷）；1Byte＝8bits。
+無損FLAC/APE；有損MP3；GIF可動畫；常見BMP未壓縮。DVD10＝雙面單層約9.4GB。
+二進位每4位→十六進位，每3位→八進位；XOR相同0不同1。
+10110111₂=B7₁₆；B5₁₆=181；139₁₀=213₈；467₁₀=723₈；482₁₀=111100010₂。
+524₁₀=1000001100₂；213₁₀=D5₁₆；419₁₀=1A3₁₆；10010111₂=227₈；1101111₂=157₈。
+Java最初Sun；VirtualBox最初innotek，現由Oracle維護；Deep Blue IBM；AlphaGo DeepMind；文心一言百度。
+
+【6｜英文全稱】
+HTML＝Hypertext Markup Language
+HTTP＝Hypertext Transfer Protocol
+HTTPS＝Hypertext Transfer Protocol Secure
+URL＝Uniform Resource Locator
+LAN＝Local Area Network
+WAN＝Wide Area Network
+DNS＝Domain Name System
+AI＝Artificial Intelligence
+CSS＝Cascading Style Sheets
+DPI＝Dots Per Inch
+PPI＝Pixels Per Inch
+ISP＝Internet Service Provider
+OSI＝Open Systems Interconnection
+Wi-Fi沒有正式縮寫全稱；題庫可能想要 Wireless Fidelity。
+加背：AUP Acceptable Use Policy；WIPS Wireless Intrusion Prevention System；網安IPS Intrusion Prevention System。
+
+【7｜錯題警報：不要背錯】
+① iPhone15/Plus=A16；Pro/ProMax=A17 Pro；全系列最大1TB，普通版最大512GB。
+② ISP原選項無正解；IPS若指資安是Prevention，不是Protection；CPU IPS另指instructions per second。
+③ 數位簽章驗來源/完整性、可發現竄改，不是阻止一切修改。Bluetooth可分享網路，也可傳檔。
+④ Excel文字前導單引號缺選項；Ctrl+`顯示公式也缺正確選項。C_8與ROSE都可作範圍名稱。
+⑤ 題幹 =$AS2+$B1 複製右一下一，應 =$AS3+$B2；若原意 =$A$2+$B1，才是 =$A$2+$B2。
+⑥ SQL本身是語言；SQL Slammer才是蠕蟲。PCIe6.0×2原始單向128Gb/s、×4為256Gb/s，題幹稱SATA Express不嚴謹。
+⑦ 2025第74題原圖未取得，不能唯一判定；圓形單選選radio，方形複選選checkbox。
+⑧ 1.30實際27題；2.30實際15題；2023末項是提交提示，沒有知識題幹。
+⑨ 8Th第9題 467₁₀＝723₈，原選項全錯，不是713₈。
+
+
+核對來源
+Apple：iPhone 15 規格: https://support.apple.com/en-us/111831
+Apple：iPhone 15 Pro 規格: https://support.apple.com/zh-cn/111829
+PCI-SIG：PCIe 6.0: https://pcisig.com/pci-express-6.0-specification
+Microsoft：數位簽章: https://support.microsoft.com/en-au/office/security-privacy/digital-signatures-and-certificates
+Microsoft：投影片起始編號: https://support.microsoft.com/en-us/powerpoint/change-the-starting-slide-number
+Microsoft：Excel 名稱規則: https://support.microsoft.com/en-us/excel/names-in-formulas
+Microsoft：Word 列印設定: https://support.microsoft.com/en-au/word/word-options-display
+Microsoft：PowerPoint 字幕: https://support.microsoft.com/en-us/powerpoint/add-closed-captions-or-subtitles-to-media-in-powerpoint
+Bluetooth：官方 profiles: https://www.bluetooth.com/specifications/specs/
+MPEG：編碼標準: https://www.mpeg.org/specifications-technologies/
+Cisco：Wi-Fi 不是縮寫: https://www-cloud-cdn.cisco.com/site/us/en/learn/topics/networking/what-is-wi-fi.html

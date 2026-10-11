@@ -1,0 +1,25 @@
+{
+  "name": "2026全澳中学生资讯科技知识问答比赛高中组模拟题",
+  "short_name": "2026资讯科技题库",
+  "description": "424道IT知識題、10份分組題庫與考前速記；支援練習、收藏、錯題與模擬考試。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f0e7",
+  "theme_color": "#f3f0e7",
+  "lang": "zh-Hant",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "./"
+}
